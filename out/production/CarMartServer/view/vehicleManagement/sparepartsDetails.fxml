@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="detailAnchorpane" prefHeight="874.0" prefWidth="913.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.vehicleManagement.sparepartsDetailsController">
+   <children>
+      <Label layoutX="24.0" layoutY="24.0" text="SpareParts">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <TableView layoutX="19.0" layoutY="64.0" prefHeight="812.0" prefWidth="894.0">
+         <columns>
+            <TableColumn minWidth="12.0" prefWidth="132.0" text="Catagory" />
+            <TableColumn prefWidth="168.0" text="Customer Name" />
+            <TableColumn prefWidth="454.0" text="Description" />
+            <TableColumn prefWidth="119.0" text="Action" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

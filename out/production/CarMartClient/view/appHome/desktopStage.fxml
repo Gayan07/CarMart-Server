@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="baseAnchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1024.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.appHome.DesktopStageController">
+   <children>
+      <AnchorPane layoutX="287.0" layoutY="265.0" prefHeight="150.0" prefWidth="1280.0" style="-fx-background-color: #2196F3;" AnchorPane.bottomAnchor="874.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text=" - C A R M A R T -" textFill="WHITE" AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="625.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font size="84.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="927.0" layoutY="83.0" size="30" text="" />
+            <Label layoutX="955.0" layoutY="54.0" text="USERNAME">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Button layoutX="1160.0" layoutY="56.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="detailAnchorpane" layoutX="880.0" layoutY="452.0" prefHeight="874.0" prefWidth="913.0" style="-fx-background-color: #E3F2FD;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0" />
+      <AnchorPane layoutX="134.0" layoutY="329.0" prefHeight="874.0" prefWidth="367.0" style="-fx-background-color: #E0F7FA;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="913.0" AnchorPane.topAnchor="150.0">
+         <children>
+            <Button layoutX="34.0" layoutY="89.0" mnemonicParsing="false" onAction="#loadHomeDetail" prefHeight="63.0" prefWidth="300.0" text="HOME">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Button>
+            <Button layoutX="34.0" layoutY="247.0" mnemonicParsing="false" onAction="#loadVehicleDetail" prefHeight="63.0" prefWidth="300.0" text="VEHICLES">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Button>
+            <Button layoutX="33.0" layoutY="333.0" mnemonicParsing="false" onAction="#loadSparePartsDetail" prefHeight="63.0" prefWidth="300.0" text="SPARE PARTS">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Button>
+            <Button layoutX="33.0" layoutY="424.0" mnemonicParsing="false" onAction="#loadNewArrivalsDetail" prefHeight="63.0" prefWidth="300.0" text="NEW ARRIVALS">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Button>
+            <Button layoutX="32.0" layoutY="508.0" mnemonicParsing="false" onAction="#loadRequestDetail" prefHeight="63.0" prefWidth="300.0" text="REQUESTED ITEMS">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Button>
+            <Button layoutX="31.0" layoutY="593.0" mnemonicParsing="false" onAction="#loadFeedbackDetail" prefHeight="63.0" prefWidth="300.0" text="FEEDBACKS">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Button>
+            <JFXToggleButton layoutX="27.0" layoutY="783.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="88.0" prefWidth="323.0" text="SERVER STATUS            ">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXToggleButton>
+            <Button layoutX="34.0" layoutY="164.0" mnemonicParsing="false" onAction="#loaduserDetail" prefHeight="63.0" prefWidth="300.0" text="PROFILE">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Button>
+            <Label layoutX="33.0" layoutY="34.0" prefHeight="21.0" prefWidth="316.0" text="DATE AND TIME" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

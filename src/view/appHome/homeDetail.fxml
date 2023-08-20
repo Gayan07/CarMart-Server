@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="detailAnchorpane" prefHeight="874.0" prefWidth="913.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.appHome.HomeDetailController">
+   <children>
+      <Label layoutX="59.0" layoutY="41.0" text="Statistics">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <BarChart layoutX="12.0" layoutY="94.0" prefHeight="668.0" prefWidth="890.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <ComboBox layoutX="211.0" layoutY="786.0" prefHeight="31.0" prefWidth="211.0" />
+      <Label layoutX="69.0" layoutY="786.0" text="Catagory">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="500.0" layoutY="786.0" text="Period">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="590.0" layoutY="786.0" prefHeight="31.0" prefWidth="211.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,16 @@
+.menuBar
+{
+        -fx-text-fill: white;
+
+}
+.changingPane{
+    -fx-background-color: aqua;
+}
+.table-row-cell:empty{
+    -fx-background-color: #ffffff;
+}
+.table-row-cell:empty .table-cell{
+    -fx-border-width: 0;
+    -fx-pref-width: 0;
+    -fx-opacity: 0;
+}

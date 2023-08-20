@@ -1,0 +1,8 @@
+.menuBar
+{
+        -fx-text-fill: white;
+
+}
+.changingPane{
+    -fx-background-color: aqua;
+}

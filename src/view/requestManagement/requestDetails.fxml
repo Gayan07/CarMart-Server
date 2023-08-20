@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="detailAnchorpane" prefHeight="874.0" prefWidth="913.0" stylesheets="@../../lib/css/app.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.requestManagement.requestDetailsController">
+   <children>
+      <Label layoutX="13.0" layoutY="14.0" text="Requested Details">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <TableView fx:id="requestTable" layoutX="9.0" layoutY="54.0" prefHeight="757.0" prefWidth="894.0">
+        <columns>
+          <TableColumn fx:id="rIDColumn" prefWidth="62.0" text="ID" />
+          <TableColumn fx:id="rBrandColumn" prefWidth="118.0" text="Brand " />
+            <TableColumn fx:id="rModelColumn" prefWidth="101.0" text="Model " />
+            <TableColumn fx:id="rColourColumn" prefWidth="113.0" text="Colour" />
+            <TableColumn fx:id="rCustomerNameColumn" prefWidth="123.0" text="Customer Name" />
+            <TableColumn fx:id="rCustomerEmailColumn" prefWidth="114.0" text="Email" />
+            <TableColumn fx:id="rCustomerMobileNumberColumn" prefWidth="145.0" text="Mobile Number" />
+            <TableColumn fx:id="rActionColumn" prefWidth="117.0" text="Action" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
